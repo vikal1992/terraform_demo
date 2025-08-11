@@ -8,7 +8,7 @@ variable "ami_id" {
 }
 
 variable "EC2_tags" {
-  type = map(String)
+  type = map(string)
   default = {
     Name        = "Terraform_Ec2"
     Environment = "Development"
