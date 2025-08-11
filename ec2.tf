@@ -5,6 +5,6 @@ resource "aws_instance" "example" {
   tags = {
     Name        = "Terraform_demo"
     Environment = "Development"
-    Owner       = "VikashVikal"
+    Owner       = "Vikash Vikal"
   }
 }
