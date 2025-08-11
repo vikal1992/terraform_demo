@@ -1,10 +1,6 @@
 resource "aws_instance" "example" {
-  ami           = "ami-0144277607031eca2" 
-  instance_type = "t2.micro"              
+  ami           = var.ami_id
+  instance_type = var.instance_type             
 
-  tags = {
-    Name        = "Terraform_demo"
-    Environment = "Development"
-    Owner       = "Vikash Vikal"
-  }
+  tags = var.EC2_tags
 }
